@@ -24,9 +24,11 @@
 
 ### Developing
 
+(replace `pnpm` with [`bun`](https://bun.sh/) if you like speed)
+
 ```bash
 pnpm i
-pnpm dev
+pnpm run dev
 ```
 
 ### Building static pages
