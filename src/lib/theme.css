@@ -1,0 +1,46 @@
+:root {
+	--t-color-main: hsl(212deg 20% 34%); /* Default main color */
+	--t-color-main-dark: hsl(137, 17%, 24%);
+	--t-color-main-text: white;
+	--t-text-heading: var(--gray-7);
+	--t-bg-body: var(--gray-1);
+	--t-bg: white;
+	--t-text: black;
+	--t-bg-light: var(--gray-2);
+	--t-radius: var(--radius-2);
+	--t-font-family: var(--font-sans);
+	--t-font-family-heading: var(--font-sans);
+	--t-containing-width-large: 1200px;
+	--t-header-height: 3rem;
+}
+
+body {
+	background-color: var(--t-bg-body);
+	color: var(--t-text);
+	font-family: var(--font-sans);
+	color-scheme: light;
+}
+
+/*
+  Open-props changes shadows based on prefered theme but we only have a light theme so we don't want those.
+  Needed until https: //github.com/argyleink/open-props/issues/249 is resolved.
+*/
+@media (prefers-color-scheme: dark) {
+	:where(html) {
+		--shadow-color: 220 3% 15% !important;
+		--shadow-strength: 1% !important;
+	}
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--t-font-family-heading);
+}
