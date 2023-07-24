@@ -11,6 +11,7 @@
 	export let data: PageData;
 	import ArticleWidthConstraint from '$lib/components/ArticleWidthConstraint.svelte';
 	import Attachment from '$lib/components/Attachment.svelte';
+	import { get } from 'svelte/store';
 
 	function handleKeydown(event: KeyboardEvent) {
 		if (event.ctrlKey && event.key === 'e') {

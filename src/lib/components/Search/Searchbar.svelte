@@ -40,7 +40,7 @@
 
 <div class="input-wrapper" class:white={true}>
 	<SearchIcon />
-	<input type="search" bind:value={$searchValue} placeholder="Zoeken..." />
+	<input type="search" bind:value={$searchValue} placeholder="Search..." />
 </div>
 
 <style>
