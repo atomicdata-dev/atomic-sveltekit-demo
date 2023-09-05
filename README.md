@@ -44,3 +44,4 @@ pnpm build
 - Run locally, test `netlify dev`
 - Create site `netlify unlink && netlify sites:create`
 - Deploy `netlify deploy --build -s <site-name>`
+- It should automatically create a sitemap
