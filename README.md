@@ -1,7 +1,18 @@
-# Atomic-Sveltekit-Demno
+# Atomic-Sveltekit-Demo
 
 - Built with `@tomic/svelte` + `sveltekit`.
-- Content can be easily managed using the [`Atomic-Server CMS`](https://github.com/atomicdata-dev/atomic-server/).
+- Content can be easily managed using the [`AtomicServer CMS`](https://github.com/atomicdata-dev/atomic-server/).
+- Simple template for a blog, portfolio, sales page, documentation page, knowledge base
+
+## Features
+
+- 🚀  **Fast**: both static pages and dynamic pages are incredibly fast.
+- 🔎  **Full-text search**: fuzzy search and various operators, often <3ms responses.
+- 🔄  **Synchronization using websockets**: build collaborative, real-time apps.
+- 🌐  **SEO-friendly**: with social previews, sitemap.
+- 🔧  **Custom data models**: create your own classes and forms. All verified and sharable using [Atomic Schema](https://docs.atomicdata.dev/schema/intro.html).
+- 📂  **File management**: support for files / attachments.
+- 💻  **Deploy using Netlify**: fast, cheap (often free) and very easy to use.
 
 ## Example sites
 
@@ -39,9 +50,9 @@ pnpm build
 
 ### Deploy using Netlify
 
+- Create a free account on [netlify](https://www.netlify.com/)
 - Install netlify cli `pnpm install netlify-cli -g`
 - Authenticate `netlify login`
 - Run locally, test `netlify dev`
 - Create site `netlify unlink && netlify sites:create`
 - Deploy `netlify deploy --build -s <site-name>`
-- It should automatically create a sitemap
