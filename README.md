@@ -1,13 +1,14 @@
-# Atomic-Sveltekit-Demo
+# Atomic-Sveltekit-Template
 
+- Simple boilerplate / template for a blog, portfolio, sales page, documentation page, knowledge base
 - Built with `@tomic/svelte` + `sveltekit`.
-- Content can be easily managed using the [`AtomicServer CMS`](https://github.com/atomicdata-dev/atomic-server/).
-- Simple template for a blog, portfolio, sales page, documentation page, knowledge base
+- Content can be easily managed using [AtomicServer](https://github.com/atomicdata-dev/atomic-server/) CMS, open source alternative to Notion.
 
 ## Features
 
 - 🚀  **Fast**: both static pages and dynamic pages are incredibly fast.
 - 🔎  **Full-text search**: fuzzy search and various operators, often <3ms responses.
+- 🍞  **Breadcrumbs**: hierarchical content, editable navigation bar menu items.
 - 🔄  **Synchronization using websockets**: build collaborative, real-time apps.
 - 🌐  **SEO-friendly**: with social previews, sitemap.
 - 🔧  **Custom data models**: create your own classes and forms. All verified and sharable using [Atomic Schema](https://docs.atomicdata.dev/schema/intro.html).
