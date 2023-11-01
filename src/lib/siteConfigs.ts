@@ -1,14 +1,14 @@
 export interface SiteConfig {
-	/** URL of the parent resource, used as the base of all resources */
-	parentRoot: string;
-	/** URL of the Argu-Site resource, which contains things like the menu bar */
+	/**
+	 * URL of the Argu-Site resource,
+	 * (https://atomicdata.dev/Folder/wp8ame4nqf/MYJkFKGEKz)
+	 * which contains things like the menu bar.
+	 * Also functions as the Home resource,
+	 * used as the base of all resources,
+	 * resource shown on the home page */
 	siteResource: string;
-	/** URL of the Argu-Site resource, which contains things like the menu bar */
-	homeUrl: string;
 }
 
 export const currentSiteConfig: SiteConfig = {
-	siteResource: 'https://atomicdata.dev/wonenatthepark/site',
-	parentRoot: 'https://atomicdata.dev/importer/l8mgzvvnm2a',
-	homeUrl: 'https://atomicdata.dev/importer/l8mgzvvnm2a',
+	siteResource: 'https://atomicdata.dev/importer/l8mgzvvnm2a',
 };

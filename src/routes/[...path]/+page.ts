@@ -10,7 +10,7 @@ export const load = (async ({ params, fetch }) => {
 
 	store.injectFetch(fetch);
 
-	const subject = `${currentSiteConfig.parentRoot}/${params.path}`;
+	const subject = `${currentSiteConfig.siteResource}/${params.path}`;
 	const r = await store.getResourceAsync(subject);
 
 	if (r.error) {

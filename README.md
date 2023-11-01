@@ -27,7 +27,7 @@
 - Create a new drive on Atomic Server.
   - Create a new [`Argu Site`](https://atomicdata.dev/Folder/wp8ame4nqf/MYJkFKGEKz). This serves as an entrypoint.
   - Make sure the site is publicly available: context menu, share, public, save.
-  - Modify the `siteConfigs.ts` file, set the links to the drive + site + home resource.
+  - Modify the `siteConfigs.ts` file, set the link to the `siteResource` using the URL of the `Argu Site` created above.
   - You might need to restart the local front-end `pnpm dev`
 - Managing content
   - Press `cmd+e` or `ctrl+e` to open the editor for an article.

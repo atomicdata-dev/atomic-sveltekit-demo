@@ -4,7 +4,7 @@ import { Store } from '@tomic/lib';
 import { currentSiteConfig } from '$lib/siteConfigs';
 
 const init = () => {
-	const serverUrl = new URL(currentSiteConfig.parentRoot);
+	const serverUrl = new URL(currentSiteConfig.siteResource);
 	serverUrl.pathname = '/';
 
 	const atomicStore = new Store({

@@ -9,7 +9,7 @@ export const load = (async ({ fetch }) => {
 
 	store.injectFetch(fetch);
 
-	const subject = currentSiteConfig.homeUrl;
+	const subject = currentSiteConfig.siteResource;
 	const resource = getResource(subject);
 
 	return {

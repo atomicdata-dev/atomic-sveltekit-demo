@@ -17,7 +17,7 @@
 	let debouncedValue = debounced(searchValue, 1);
 
 	$: searchSubject = buildSearchSubject($store, $debouncedValue, {
-		scope: currentSiteConfig.parentRoot,
+		scope: currentSiteConfig.siteResource,
 		filters: {
 			[urls.properties.isA]: 'https://atomicdata.dev/classes/Article',
 		},
