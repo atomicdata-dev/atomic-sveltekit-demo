@@ -39,6 +39,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^4.2.0",
 		"@tomic/lib": "^0.35.0",
 		"@tomic/svelte": "^0.35.2",
 		"polished": "^4.2.2",

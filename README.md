@@ -57,3 +57,22 @@ pnpm build
 - Run locally, test `netlify dev`
 - Create site `netlify unlink && netlify sites:create`
 - Deploy `netlify deploy --build -s <site-name>`
+
+### Deploy using Cloudflare
+- Create account on Cloudflare 
+- install wrangler v3 `npm install wrangler -g` or `pnpm install wrangler -g`
+- run `wrangler login`
+- add or uncommend cloudflare adapter `import adapter from '@sveltejs/adapter-cloudflare';` in svelte.config.js
+- configure adapter:
+```
+		adapter: adapter({
+			// See below for an explanation of these options
+			routes: {
+				include: ['/*'],
+				exclude: ['<all>']
+			}
+		}),
+```
+- build locally `pnpm run build`
+- run locally `wrangler pages dev .svelte-kit/cloudflare`
+- deploy  `wrangler pages publish`
